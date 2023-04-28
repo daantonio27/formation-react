@@ -1,8 +1,8 @@
 import './App.css';
-import SayMyName from './components/SayMyName';
-import Pessoa from './components/Pessoa';
-import Phrase from './components/phrase';
-import List from './components/List';
+import HelloWorld from "./components/HelloWorld";
+import Evento from "./components/Evento";
+import Form from "./components/Form";
+
 
 function App() {
 
@@ -10,18 +10,11 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Test CSS</h1>
-      <Phrase />
-      <SayMyName nome="Da Antonio" />
-      <SayMyName nome="Antonio" />
-      <SayMyName nome={nome} />
-      <Pessoa
-        nome="Rodrigo"
-        idade="28"
-        profissao="Programador"
-        foto="https://via.placeholder.com/150"
-      />
-      <List />
+      <HelloWorld />
+      <Evento />
+      <div>
+        <Form />
+      </div>
     </div>
   );
 }
