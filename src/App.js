@@ -2,6 +2,7 @@ import './App.css';
 import HelloWorld from './components/HelloWorld';
 import SayMyName from './components/SayMyName';
 import Pessoa from './components/Pessoa';
+import Phrase from './components/phrase';
 
 function App() {
 
@@ -9,6 +10,8 @@ function App() {
 
   return (
     <div className="App">
+      <h1>Test CSS</h1>
+      <Phrase/>
       <SayMyName nome="Da Antonio" />
       <SayMyName nome="Antonio" />
       <SayMyName nome={nome} />
